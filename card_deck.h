@@ -1,3 +1,10 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 12/1/19
+
+    Header file for CardDeck class 
+*/
 #include <string>
 #include <vector>
 using namespace std;
@@ -30,7 +37,7 @@ class CardDeck
         */
         void shuffleDeck(); 
         /*
-            This function will shuffle both the vector arrays
+            This function will shuffle both vector arrays
             faces and suit to randomize the deck. 
         */
 
