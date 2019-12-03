@@ -1,16 +1,14 @@
-// #include "guess.h"
-// #include "cardDeck.h"
-// #include <iostream>
+#include "guessCard.h"
+#include <iostream>
 
-// int Guess::guessFace(){
-//     CardDeck deck; 
-
-//      cout << "ENTER GUESS: " << endl;
-//      cin >> guess; 
-
-//      if(guess == deck.getFace())
-//          cout << "Match" << endl;
-//     else 
-//         return -1; 
+int GuessCard::guessFace(){
     
-// }
+    //  cout << "ENTER GUESS: " << endl;
+    //  cin >> guess; 
+
+    //  if(guess == deck.getFace())
+    //      cout << "Match" << endl;
+    // else 
+    //     return -1; 
+    return -1; 
+}

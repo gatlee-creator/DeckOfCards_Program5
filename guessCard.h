@@ -5,10 +5,11 @@
 
     Header file for Guess class 
 */
+#include "cardDeck.h"
 #include <string>
 using namespace std;
 
-class Guess
+class GuessCard : public CardDeck
 {
     public:
         int guessFace();
