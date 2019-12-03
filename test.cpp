@@ -11,9 +11,11 @@ int main()
     cout << "FACE: " << guess.getFace() << endl;
     cout << "SUIT: " << guess.getSuit() << endl;
 
-
+    guess.guessSuit(); 
     guess.guessFace(); 
-    guess.getSuit(); 
+
+    cout << "FACE: " << guess.getFace() << endl;
+    cout << "SUIT: " << guess.getSuit() << endl;
     
 
 }
