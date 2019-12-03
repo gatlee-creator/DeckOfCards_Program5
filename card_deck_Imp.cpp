@@ -1,3 +1,10 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 12/1/19
+
+    Implementation file for CardDeck class 
+*/
 #include "card_deck.h"
 #include <string>
 #include <algorithm>
