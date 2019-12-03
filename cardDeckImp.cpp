@@ -18,9 +18,6 @@ using namespace std;
 */
 CardDeck::CardDeck(){
 
-    //intialize face and suit to 0 
-    face = 0;
-    suit = 0;
 
     //intialize the face values 
     faces.push_back("ACE"); 

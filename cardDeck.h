@@ -48,9 +48,7 @@ class CardDeck
 
 
         private:
-            int face;
-            int suit; 
-
+            
             vector<string> faces;
             vector<string> suits;
 

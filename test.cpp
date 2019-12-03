@@ -8,10 +8,12 @@ int main()
 {
     GuessCard guess;
 
-    cout << guess.getFace() << endl;
+    cout << "FACE: " << guess.getFace() << endl;
+    cout << "SUIT: " << guess.getSuit() << endl;
 
-    guess.shuffleDeck(); 
 
     guess.guessFace(); 
+    guess.getSuit(); 
+    
 
 }

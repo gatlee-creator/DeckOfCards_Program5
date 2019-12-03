@@ -3,7 +3,7 @@
     Course: csc1720
     Date: 12/3/2019
 
-    Header file for Guess class 
+    Implementation file for GuessCard Class
 */
 #include "guessCard.h"
 #include <iostream>
@@ -15,14 +15,43 @@
 */
 int GuessCard::guessFace(){
     
-     cout << "ENTER GUESS: " << endl;
+    //first shuffle the deck
+    shuffleDeck(); 
+
+    //then ask user for their guess 
+     cout << "ENTER GUESS FOR FACE: " << endl;
      cin >> guess; 
 
-     if(guess == getFace()){
+     if(guess == getFace()) //check if the guess is correct
          cout << "Match" << endl;
-         return 0;
-     } else {
-          return -1; 
-     } 
-       
+     else 
+        return -1; 
+     
+    
+    return 0;
 }
+
+/*
+    This function takes input from the user to 
+    check if it matches the suit on top
+    of the deck. 
+*/
+int GuessCard::guessSuit(){
+    
+     //first shuffle the deck
+     shuffleDeck(); 
+
+     //then ask user for their guess 
+     cout << "ENTER GUESS FOR SUIT: " << endl;
+     cin >> guess; 
+
+     if(guess == getSuit())
+         cout << "Match" << endl;
+      else 
+          return -1; 
+     
+    
+    return 0;
+}
+
+
