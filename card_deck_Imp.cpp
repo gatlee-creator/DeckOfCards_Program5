@@ -36,4 +36,20 @@ CardDeck::CardDeck(){
     suits.push_back("SPADES");
     suits.push_back("DIAMONDS");
 
-}
+} //end default constructor 
+
+/*
+    Function returns the face value on
+    top of the deck. 
+*/
+string CardDeck::getFace(){
+    return faces.front();;
+} 
+
+/*
+    Function returns the suit value 
+    on top of the deck 
+*/
+string CardDeck::getSuit(){
+    return suits.front();;
+} 
