@@ -54,4 +54,35 @@ int GuessCard::guessSuit(){
     return 0;
 }
 
+/*
+    This function takes input from the user to 
+    check if it matches the suit and face on top
+    of the deck. 
+*/
+int GuessCard::guessFaceAndSuit(){
+    
+    //  //first shuffle the deck
+    //  shuffleDeck(); 
+
+    //  //then ask user for their guess 
+    //  cout << "ENTER GUESS FOR SUIT: " << endl;
+    //  cin >> guess; 
+
+    //  if(guess == getSuit())
+    //      cout << "Match" << endl;
+    //   else 
+    //       return -1; 
+
+    // //then ask user for their guess 
+    //  cout << "ENTER GUESS FOR FACE: " << endl;
+    //  cin >> guess; 
+
+    //  if(guess == getFace()) //check if the guess is correct
+    //      cout << "Match" << endl;
+    //  else 
+    //     return -1; //THIS NEEDS TO BE CHANGED 
+     
+    
+    return 0;
+}
 
