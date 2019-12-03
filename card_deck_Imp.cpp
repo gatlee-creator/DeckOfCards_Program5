@@ -1,5 +1,6 @@
 #include "card_deck.h"
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -53,3 +54,16 @@ string CardDeck::getFace(){
 string CardDeck::getSuit(){
     return suits.front();;
 } 
+
+/*
+    Function calls the built random_shuffle 
+    to shuffle both the faces and suits vector
+*/
+void CardDeck::shuffleDeck(){
+
+    //shuffle the face values 
+    random_shuffle(faces.begin(), faces.end());
+
+    //shuffle the suit values
+    random_shuffle(suits.begin(), suits.end());
+}
