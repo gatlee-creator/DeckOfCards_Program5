@@ -8,11 +8,16 @@ int main()
 {
     GuessCard guess;
 
-    cout << "FACE: " << guess.getFace() << endl;
-    cout << "SUIT: " << guess.getSuit() << endl;
+    // cout << "FACE: " << guess.getFace() << endl;
+    // cout << "SUIT: " << guess.getSuit() << endl;
 
-    guess.guessSuit(); 
-    guess.guessFace(); 
+    // guess.guessSuit(); 
+    // guess.guessFace(); 
+
+    // cout << "FACE: " << guess.getFace() << endl;
+    // cout << "SUIT: " << guess.getSuit() << endl;
+
+    guess.guessFaceAndSuit(); 
 
     cout << "FACE: " << guess.getFace() << endl;
     cout << "SUIT: " << guess.getSuit() << endl;

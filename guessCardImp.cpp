@@ -63,26 +63,23 @@ int GuessCard::guessSuit(){
 */
 int GuessCard::guessFaceAndSuit(){
     
-    //  //first shuffle the deck
-    //  shuffleDeck(); 
+     string temp; 
+     //first shuffle the deck
+     shuffleDeck(); 
+     cout << "deck shuffled..." << endl;
 
-    //  //then ask user for their guess 
-    //  cout << "ENTER GUESS FOR SUIT: " << endl;
-    //  cin >> guess; 
+     //then ask user for their guess 
+     cout << "ENTER GUESS FOR SUIT: " << endl;
+     cin >> guess; 
 
-    //  if(guess == getSuit())
-    //      cout << "Match" << endl;
-    //   else 
-    //       return -1; 
+      //then ask user for their guess 
+     cout << "ENTER GUESS FOR FACE: " << endl;
+     cin >> temp; 
 
-    // //then ask user for their guess 
-    //  cout << "ENTER GUESS FOR FACE: " << endl;
-    //  cin >> guess; 
-
-    //  if(guess == getFace()) //check if the guess is correct
-    //      cout << "Match" << endl;
-    //  else 
-    //     return -1; //THIS NEEDS TO BE CHANGED 
+     if((guess == getSuit()) && (temp == getFace())) 
+         cout << "Match" << endl;
+     else 
+        return -1; 
      
     
     return 0;
