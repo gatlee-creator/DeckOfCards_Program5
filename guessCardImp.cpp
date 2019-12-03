@@ -3,12 +3,13 @@
 
 int GuessCard::guessFace(){
     
-    //  cout << "ENTER GUESS: " << endl;
-    //  cin >> guess; 
+     cout << "ENTER GUESS: " << endl;
+     cin >> guess; 
 
-    //  if(guess == deck.getFace())
-    //      cout << "Match" << endl;
-    // else 
-    //     return -1; 
-    return -1; 
+     if(guess == getFace()){
+         cout << "Match" << endl;
+         return 0;
+     }
+    else 
+        return -1; 
 }
