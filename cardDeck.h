@@ -5,6 +5,11 @@
 
     Header file for CardDeck class 
 */
+
+//file guards
+#ifndef cardDeck_H
+#define cardDeck_H
+
 #include <string>
 #include <vector>
 using namespace std;
@@ -50,3 +55,5 @@ class CardDeck
             vector<string> suits;
 
 };
+
+#endif

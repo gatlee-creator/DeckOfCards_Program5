@@ -5,6 +5,11 @@
 
     Header file for Guess class 
 */
+
+//file guards
+#ifndef guessCard_H
+#define guessCard_H
+
 #include "cardDeck.h"
 #include <string>
 using namespace std;
@@ -45,3 +50,5 @@ class GuessCard : public CardDeck
        private:
             string guess;
 };
+
+#endif
