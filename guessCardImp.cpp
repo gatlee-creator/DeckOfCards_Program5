@@ -17,6 +17,7 @@ int GuessCard::guessFace(){
     
     //first shuffle the deck
     shuffleDeck(); 
+    cout << "deck shuffled.." << endl;
 
     //then ask user for their guess 
      cout << "ENTER GUESS FOR FACE: " << endl;
@@ -40,6 +41,7 @@ int GuessCard::guessSuit(){
     
      //first shuffle the deck
      shuffleDeck(); 
+     cout << "deck shuffled..." << endl;
 
      //then ask user for their guess 
      cout << "ENTER GUESS FOR SUIT: " << endl;
