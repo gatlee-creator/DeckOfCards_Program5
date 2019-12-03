@@ -7,4 +7,6 @@ int main()
 {
     CardDeck cards; 
 
+    cout << cards.getFace() << endl;
+    cout << cards.getSuit() << endl;
 }
