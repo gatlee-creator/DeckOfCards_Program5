@@ -41,11 +41,12 @@ class CardDeck
             faces and suit to randomize the deck. 
         */
 
+
         private:
             int face;
             int suit; 
 
-            const vector<string> faces[13];
-            const vector<string> suit[4];
+            vector<string> faces;
+            vector<string> suits;
 
 };
