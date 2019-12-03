@@ -9,17 +9,17 @@ int main()
     CardDeck cards; 
 
     cout << cards.getFace() << endl;
-    cout << cards.getSuit() << endl;
+    // cout << cards.getSuit() << endl;
 
     cards.shuffleDeck();
 
     cout << cards.getFace() << endl;
-    cout << cards.getSuit() << endl;
+    // cout << cards.getSuit() << endl;
 
     cards.shuffleDeck();
 
     cout << cards.getFace() << endl;
-    cout << cards.getSuit() << endl;
+    // cout << cards.getSuit() << endl;
 
     GuessCard guess; 
 
