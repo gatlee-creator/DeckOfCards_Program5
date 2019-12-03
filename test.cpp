@@ -6,22 +6,11 @@ using namespace std;
 
 int main()
 {
-    CardDeck cards; 
+    GuessCard guess;
 
-    cout << cards.getFace() << endl;
-    // cout << cards.getSuit() << endl;
+    cout << guess.getFace() << endl;
 
-    cards.shuffleDeck();
-
-    cout << cards.getFace() << endl;
-    // cout << cards.getSuit() << endl;
-
-    cards.shuffleDeck();
-
-    cout << cards.getFace() << endl;
-    // cout << cards.getSuit() << endl;
-
-    GuessCard guess; 
+    guess.shuffleDeck(); 
 
     guess.guessFace(); 
 

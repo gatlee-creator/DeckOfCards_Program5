@@ -9,7 +9,8 @@ int GuessCard::guessFace(){
      if(guess == getFace()){
          cout << "Match" << endl;
          return 0;
-     }
-    else 
-        return -1; 
+     } else {
+          return -1; 
+     } 
+       
 }

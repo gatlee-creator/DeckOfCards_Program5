@@ -51,7 +51,7 @@ CardDeck::CardDeck(){
     top of the deck. 
 */
 string CardDeck::getFace(){
-    return faces.front();;
+    return faces.front();
 } 
 
 /*
@@ -59,7 +59,7 @@ string CardDeck::getFace(){
     on top of the deck 
 */
 string CardDeck::getSuit(){
-    return suits.front();;
+    return suits.front();
 } 
 
 /*
