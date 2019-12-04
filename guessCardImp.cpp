@@ -29,10 +29,12 @@ int GuessCard::guessFace(){
     
     //first shuffle the deck
     shuffleDeck(); 
-    cout << "deck shuffled.." << endl;
+    cout << "Deck shuffled.." << endl;
 
     //then ask user for their guess 
-     cout << "ENTER GUESS FOR FACE: " << endl;
+     cout << "Enter guess for face value " 
+          << "of the card on top of the deck: " << endl;
+     cout << "(ex. \"King\")" << endl;
      cin >> guess; 
      upper(guess); //convert input to all uppercase
 
@@ -56,10 +58,12 @@ int GuessCard::guessSuit(){
     
      //first shuffle the deck
      shuffleDeck(); 
-     cout << "deck shuffled..." << endl;
+     cout << "Deck shuffled..." << endl;
 
      //then ask user for their guess 
-     cout << "ENTER GUESS FOR SUIT: " << endl;
+     cout << "Enter guess for suit value " 
+         << "of the card on top of the deck: " << endl;
+     cout << "(ex. \"Spades\")" << endl;
      cin >> guess; 
      upper(guess);
 
@@ -84,15 +88,19 @@ int GuessCard::guessFaceAndSuit(){
      string temp; 
      //first shuffle the deck
      shuffleDeck(); 
-     cout << "deck shuffled..." << endl;
+     cout << "Deck shuffled..." << endl;
 
      //then ask user for their guess 
-     cout << "ENTER GUESS FOR SUIT: " << endl;
+     cout << "Enter guess for suit value " 
+          << "of the card on top of the deck: " << endl;
+     cout << "(ex. \"Spades\")" << endl;
      cin >> guess; 
      upper(guess);
 
       //then ask user for their guess 
-     cout << "ENTER GUESS FOR FACE: " << endl;
+     cout << "Enter guess for face value " 
+          << "of the card on top of the deck: " << endl;
+     cout << "(ex. \"King\")" << endl;
      cin >> temp; 
      upper(temp);
 

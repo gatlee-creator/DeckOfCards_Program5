@@ -26,7 +26,7 @@ void CardGame::menu(){
     
     cout << "[a] guess suit of the top card" << endl;
     cout << "[b] guess face of the top card" << endl;
-    cout << "[c] guess the suit and face of"
+    cout << "[c] guess the suit and face of "
          << "the top card" << endl;
     cout << "[d] quit" << endl;
 
