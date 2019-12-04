@@ -34,7 +34,7 @@ int GuessCard::guessFace(){
     //then ask user for their guess 
      cout << "Enter guess for face value " 
           << "of the card on top of the deck: " << endl;
-     cout << "(ex. \"King\")" << endl;
+     cout << "(ex. \"Five\")" << endl;
      cin >> guess; 
      upper(guess); //convert input to all uppercase
 
@@ -100,7 +100,7 @@ int GuessCard::guessFaceAndSuit(){
       //then ask user for their guess 
      cout << "Enter guess for face value " 
           << "of the card on top of the deck: " << endl;
-     cout << "(ex. \"King\")" << endl;
+     cout << "(ex. \"Five\")" << endl;
      cin >> temp; 
      upper(temp);
 
