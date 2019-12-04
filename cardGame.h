@@ -4,14 +4,22 @@
 class CardGame
 {
     public:
-        int menu(); 
-        /*
-            This function prints the main menu
-            that the user will see for our card game 
-        */
+       
         void play(); 
         /*
-            This function starts our card game by
-            calling menu in a loop.
+            This is the one function that is public
+            so it can be called to start our card game. 
         */
+
+       private:
+            void menu(); 
+            /*
+                This function prints the main menu
+                that the user will see for our card game 
+            */
+            int input(char selection, GuessCard &guess); 
+
+
+            char user_selection; 
+            int exit_game; 
 };
