@@ -4,6 +4,11 @@
 class CardGame
 {
     public:
+
+        CardGame();
+        /*
+            Default constructor 
+        */
        
         void play(); 
         /*
@@ -17,9 +22,15 @@ class CardGame
                 This function prints the main menu
                 that the user will see for our card game 
             */
-            int input(char selection, GuessCard &guess); 
-
+            int input(char selection); 
+            /*
+                This function will take menu input and 
+                call functions from the guessCard class 
+                to play the game. 
+            */
+          
 
             char user_selection; 
-            int exit_game; 
+            bool exit_game;
+            GuessCard *guessptr;
 };

@@ -1,5 +1,18 @@
+
+#ifndef cardGame_H
+#define cardGame_H
+
 #include "cardGame.h"   
 #include <iostream>
+
+
+CardGame::CardGame(){
+    GuessCard guess;
+    guessptr = &guess;
+
+    exit_game = false;
+}
+
 
 void CardGame::menu(){
 
@@ -13,28 +26,41 @@ void CardGame::menu(){
     cout << "[d] quit" << endl;
 
     cin >> user_selection; 
+    input(user_selection);
 }
 
-int CardGame::input(char selection, GuessCard &guess){
+int CardGame::input(char selection){
     
     const int WRONG_GUESS = -1; 
 
     switch (selection)
     {
         case 'a':
-          
+            guessptr->guessSuit(); 
             break;
         case 'b':
-            /* code */
+            guessptr->guessFace();
             break;
         case 'c':
-            /* code */
+            guessptr->guessFaceAndSuit();
             break;
         case 'd':
-            /* code */
+            exit_game = true;
             break;
         
         default:
+            cout << "Please enter a value menu choice" << endl;
             break;
     }
+
+    return false; 
 }
+
+void CardGame::play(){
+
+    while(exit_game != true){
+        menu();
+    }
+}
+
+#endif 
