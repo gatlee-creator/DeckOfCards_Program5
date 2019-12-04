@@ -24,11 +24,13 @@ int GuessCard::guessFace(){
      cin >> guess; 
 
      if(guess == getFace()) //check if the guess is correct
-         cout << "Match" << endl;
-     else 
-        return -1; 
-     
-    
+         cout << "Correct! Good guess" << endl;
+     else{
+         cout << "Wrong guess!" << endl;
+         cout << "Face of top card: " << getFace() << endl;
+         return -1; 
+     } 
+ 
     return 0;
 }
 
@@ -48,11 +50,13 @@ int GuessCard::guessSuit(){
      cin >> guess; 
 
      if(guess == getSuit())
-         cout << "Match" << endl;
-      else 
-          return -1; 
-     
-    
+         cout << "Correct! Good guess" << endl;
+     else{
+         cout << "Wrong guess!" << endl;
+         cout << "Suit of top card: " << getSuit() << endl;
+         return -1; 
+     } 
+
     return 0;
 }
 
@@ -77,11 +81,14 @@ int GuessCard::guessFaceAndSuit(){
      cin >> temp; 
 
      if((guess == getSuit()) && (temp == getFace())) 
-         cout << "Match" << endl;
-     else 
-        return -1; 
-     
-    
+         cout << "Correct! Good guess" << endl;
+     else{
+         cout << "Wrong guess!" << endl;
+         cout << "Face of top card: " << getFace() << endl;
+         cout << "Suit of top card: " << getSuit() << endl;
+         return -1; 
+     } 
+
     return 0;
 }
 

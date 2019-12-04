@@ -22,10 +22,7 @@ int CardGame::input(char selection, GuessCard &guess){
     switch (selection)
     {
         case 'a':
-            //ABSRACT THIS JUNK
-            // if(guess.guessFace() == WRONG_GUESS) 
-            //     cout << "wrong guess" << endl;
-            //     cout << "face of top card:" << guess.getFace() << endl;
+          
             break;
         case 'b':
             /* code */
