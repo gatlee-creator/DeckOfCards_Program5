@@ -1,13 +1,24 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 12/3/2019
 
+    Implementation file for the CardGame class 
+*/
 #include "cardGame.h"   
 #include <iostream>
 
-
+//default constructor  
 CardGame::CardGame(){
     exit_game = false;
 }
 
-
+/*
+    This function prints all the menu options
+    for the card game. 
+    Its accepts user input and then calls input 
+    to active an option 
+*/
 void CardGame::menu(){
 
     cout << "Graham's Card Game" << endl;
@@ -23,10 +34,12 @@ void CardGame::menu(){
     input(user_selection);
 }
 
-int CardGame::input(char selection){
+/*
+    This function takes user input and calls the 
+    according functions from the GuessCard class. 
+*/
+void CardGame::input(char selection){
     
-    const int WRONG_GUESS = -1; 
-
     switch (selection)
     {
         case 'a':
@@ -47,13 +60,19 @@ int CardGame::input(char selection){
             break;
     }
 
-    return false; 
 }
 
+/*
+    This abstract function can be called to 
+    start the card game. It essentially calls
+    menu in a loop. 
+    Postcondition:
+        - if exit_game == false, then exit program
+*/
 void CardGame::play(){
 
-    while(exit_game != true){
+    while(exit_game != true)
         menu();
-    }
-}
+    
+} 
 

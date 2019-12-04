@@ -1,7 +1,13 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 12/3/2019
+
+    Header file for the CardGame class 
+*/
 #ifndef cardGame_H
 #define cardGame_H
 
-#include "cardDeck.h"
 #include "guessCard.h"
 
 class CardGame
@@ -10,26 +16,27 @@ class CardGame
 
         CardGame();
         /*
-            Default constructor 
+            Default constructor intializes exit_game 
+            to false. 
         */
-       
         void play(); 
         /*
-            This is the one function that is public
-            so it can be called to start our card game. 
+            Abstract public function that can be called 
+            to start the game. 
         */
 
     private:
+
         void menu(); 
         /*
             This function prints the main menu
-            that the user will see for our card game 
+            that the user will see for our card game. 
+            Menu should only be invoked from play 
         */
-        int input(char selection); 
+        void input(char selection); 
         /*
-            This function will take menu input and 
-            call functions from the guessCard class 
-            to play the game. 
+            This function will take user input and should
+            only be called from menu     
         */
         
         
