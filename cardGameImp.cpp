@@ -1,15 +1,9 @@
 
-#ifndef cardGame_H
-#define cardGame_H
-
 #include "cardGame.h"   
 #include <iostream>
 
 
 CardGame::CardGame(){
-    GuessCard guess;
-    guessptr = &guess;
-
     exit_game = false;
 }
 
@@ -36,13 +30,13 @@ int CardGame::input(char selection){
     switch (selection)
     {
         case 'a':
-            guessptr->guessSuit(); 
+            guess.guessSuit(); 
             break;
         case 'b':
-            guessptr->guessFace();
+            guess.guessFace();
             break;
         case 'c':
-            guessptr->guessFaceAndSuit();
+            guess.guessFaceAndSuit();
             break;
         case 'd':
             exit_game = true;
@@ -63,4 +57,3 @@ void CardGame::play(){
     }
 }
 
-#endif 
