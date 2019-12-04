@@ -9,6 +9,18 @@
 #include <iostream>
 
 /*
+    Function not included in class but used
+    as a small utility to convert all user 
+    input into uppercase lettering. 
+    This way a user can enter upper or lower case
+    answers 
+*/
+void upper(string &str){
+    for(int i=0; i < str.length(); i++)
+        str[i] = toupper(str[i]);
+}
+
+/*
     This function takes input from the user to 
     check if it matches the face value on top
     of the deck. 
@@ -22,6 +34,7 @@ int GuessCard::guessFace(){
     //then ask user for their guess 
      cout << "ENTER GUESS FOR FACE: " << endl;
      cin >> guess; 
+     upper(guess); //convert input to all uppercase
 
      if(guess == getFace()) //check if the guess is correct
          cout << "Correct! Good guess" << endl;
@@ -48,6 +61,7 @@ int GuessCard::guessSuit(){
      //then ask user for their guess 
      cout << "ENTER GUESS FOR SUIT: " << endl;
      cin >> guess; 
+     upper(guess);
 
      if(guess == getSuit())
          cout << "Correct! Good guess" << endl;
@@ -75,10 +89,12 @@ int GuessCard::guessFaceAndSuit(){
      //then ask user for their guess 
      cout << "ENTER GUESS FOR SUIT: " << endl;
      cin >> guess; 
+     upper(guess);
 
       //then ask user for their guess 
      cout << "ENTER GUESS FOR FACE: " << endl;
      cin >> temp; 
+     upper(temp);
 
      if((guess == getSuit()) && (temp == getFace())) 
          cout << "Correct! Good guess" << endl;
@@ -91,4 +107,6 @@ int GuessCard::guessFaceAndSuit(){
 
     return 0;
 }
+
+
 
